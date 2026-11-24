@@ -1,18 +1,21 @@
 """The One-Line Laugh — one funny line about a landlord, a lift, and a ground-floor flat.
 
-The entry is a rent-ledger line item, not a sentence: the fields carry the
-joke. Unit 101 sits on floor 0, is billed $42/mo elevator maintenance,
-pays +$85/mo rent, and has taken 0 elevator trips — closed with STATUS: PAID.
-No conjunctions, no explanation; the conflicting data points are the irony —
-floor 0, elevator fee, 0 trips, rent up, paid anyway.
+The entry is a building notice, not a ledger: the paradox lands in the
+first words (ground-floor flat, elevator access), the middle twists the
+knife (stairs sold separately — the thing you actually use is the add-on),
+and the punchline is the billing itself: a lift fee due in full for
+zero rides taken, with zero refunds given — you pay for the lift
+precisely because you never use it. No amounts, no IDs, no status
+stamp — a notice stays in effect, and so does the invoice.
 """
 
 import os
 import sys
 
-TEXT = "LEDGER #4471: unit 101, floor 0 — elevator maintenance $42/mo, rent +$85/mo, elevator trips: 0. STATUS: PAID."
-# Ledger fields only: floor 0, elevator fee $42, trips 0, rent +$85, PAID.
-# The contradiction between the fields is the joke — no sentence explains it.
+TEXT = "NOTICE: your ground-floor flat now includes elevator access — stairs sold separately. Lift fee due in full: 0 rides taken, 0 refunds given."
+# Notice framing: ground floor + elevator access up front, stairs sold
+# separately, and the punchline is the billing — a fee due in full for
+# zero rides, zero refunds.
 
 
 def main() -> int:
