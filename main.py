@@ -1,14 +1,18 @@
 """The One-Line Laugh — one funny line about a landlord, a lift, and a ground-floor flat.
 
-The entry is a single sentence: a rent hike justified by a working elevator,
-landing on the fact that the narrator has lived on the ground floor for three
-years. The punchline is the last clause: the lift is useless to the narrator.
+The entry is a rent-ledger line item, not a sentence: the fields carry the
+joke. Unit 101 sits on floor 0, is billed $42/mo elevator maintenance,
+pays +$85/mo rent, and has taken 0 elevator trips — closed with STATUS: PAID.
+No conjunctions, no explanation; the conflicting data points are the irony —
+floor 0, elevator fee, 0 trips, rent up, paid anyway.
 """
 
 import os
 import sys
 
-TEXT = "The landlord raised my rent because the elevator works — I've lived on the ground floor for 3 years."
+TEXT = "LEDGER #4471: unit 101, floor 0 — elevator maintenance $42/mo, rent +$85/mo, elevator trips: 0. STATUS: PAID."
+# Ledger fields only: floor 0, elevator fee $42, trips 0, rent +$85, PAID.
+# The contradiction between the fields is the joke — no sentence explains it.
 
 
 def main() -> int:
